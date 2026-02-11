@@ -1,0 +1,48 @@
+{
+  "name": "@alphaseed/express-starter-kit",
+  "version": "1.0.0",
+  "description": "Production-ready Express.js API starter kit with authentication, validation, and best practices",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "test": "jest --coverage",
+    "test:watch": "jest --watch",
+    "lint": "eslint src --fix",
+    "docker:build": "docker build -t express-api .",
+    "docker:run": "docker run -p 3000:3000 express-api"
+  },
+  "keywords": [
+    "express",
+    "api",
+    "starter",
+    "rest",
+    "authentication",
+    "jwt",
+    "nodejs"
+  ],
+  "author": "αB <https://github.com/AlphaB135>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "dotenv": "^16.3.1",
+    "helmet": "^7.1.0",
+    "cors": "^2.8.5",
+    "compression": "^1.7.4",
+    "express-rate-limit": "^7.1.5",
+    "joi": "^17.11.0",
+    "bcrypt": "^5.1.1",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.0.3",
+    "pg": "^8.11.3",
+    "winston": "^3.11.0",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2",
+    "jest": "^29.7.0",
+    "supertest": "^6.3.3",
+    "eslint": "^8.55.0"
+  }
+}
